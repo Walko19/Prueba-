@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Multilenguaje</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo">¡Hola, mundo!</h1>
+    <p id="parrafo">Esta es mi primera página web.</p>
+    <button id="botonIdioma">🌎 Cambiar a Inglés</button>
+
+    <script>
+        let idiomaActual = "es";
+
+        document.getElementById("botonIdioma").addEventListener("click", function() {
+            if (idiomaActual === "es") {
+                document.getElementById("titulo").textContent = "Hello, world!";
+                document.getElementById("parrafo").textContent = "This is my first web page.";
+                this.textContent = "🌎 Cambiar a Español";
+                idiomaActual = "en";
+            } else {
+                document.getElementById("titulo").textContent = "¡Hola, mundo!";
+                document.getElementById("parrafo").textContent = "Esta es mi primera página web.";
+                this.textContent = "🌎 Cambiar a Inglés";
+                idiomaActual = "es";
+            }
+        });
+    </script>
+
+</body>
+</html>
