@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página web</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1 id="titulo">Web de la primera semana hecha con VSC</h1>
+    <p id="parrafo">Esta web está hecha con HTML, PHP y JavaScript</p>
+    <button id="botonIdioma">Cambiar a inglés</button>
+
+    <h2 id="tituloFormulario">Formulario PHP</h2>
+    <form action="formulario.php" method="post">
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" id="correo" name="correo" placeholder="Tu correo" required>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+        <button type="submit" id="enviar">Enviar</button>
+    </form>
+    <div id="respuesta"></div>
+</body>
+</html>
